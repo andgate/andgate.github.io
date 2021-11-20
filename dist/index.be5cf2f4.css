@@ -1,0 +1,14 @@
+#header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#dev-logo {
+  margin-right: 5px;
+}
+
+#project-list {
+  color: blue;
+}
+/*# sourceMappingURL=index.be5cf2f4.css.map */

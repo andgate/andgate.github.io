@@ -1,0 +1,24 @@
+{
+  "name": "andgate.github.io",
+  "version": "1.0.0",
+  "description": "Developer bio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "minify src/index.html >> index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andgate/andgate.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andgate/andgate.github.io/issues"
+  },
+  "homepage": "https://github.com/andgate/andgate.github.io#readme",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
