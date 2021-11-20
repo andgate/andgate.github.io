@@ -1,11 +1,11 @@
 {
   "name": "andgate.github.io",
+  "private": "true",
   "version": "1.0.0",
   "description": "Developer bio",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "minify src/index.html >> index.html",
+    "start": "parcel src/index.html --dist-dir docs --no-optimize",
+    "build": "parcel build src/index.html --dist-dir docs --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
