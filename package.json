@@ -1,8 +1,8 @@
 {
-  "name": "andgate.github.io",
+  "name": "andgate-homepage",
   "private": "true",
   "version": "1.0.0",
-  "description": "Developer bio",
+  "description": "Homepage for the developer andgate.",
   "scripts": {
     "start": "parcel src/index.html --dist-dir docs --no-optimize",
     "build": "parcel build src/index.html --dist-dir docs --no-source-maps",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/andgate/andgate.github.io/issues"
   },
-  "homepage": "https://github.com/andgate/andgate.github.io#readme",
+  "homepage": "https://andgate.github.io/",
   "devDependencies": {
     "parcel": "^2.0.1"
   }
