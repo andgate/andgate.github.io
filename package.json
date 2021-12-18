@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "description": "Homepage for the developer andgate.",
   "scripts": {
-    "start": "parcel src/index.html --dist-dir docs --no-optimize",
-    "build": "parcel build src/index.html --dist-dir docs --no-source-maps",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html --dist-dir docs --no-source-maps",
+    "build": "parcel build src/index.html --dist-dir docs --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,10 @@
   },
   "homepage": "https://andgate.github.io/",
   "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.0.1",
     "parcel": "^2.0.1"
+  },
+  "dependencies": {
+    "marked": "^4.0.7"
   }
 }
