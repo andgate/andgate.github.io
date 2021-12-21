@@ -1,0 +1,56 @@
+import bioPicUrl from 'data-url:../assets/bio-pic.png'
+import bioText from 'bundle-text:../assets/bio.txt'
+import { px } from 'csx'
+import { style } from 'typestyle'
+import { pageContentText, pageTitleText } from '../styles/text'
+import * as csstips from 'csstips'
+import * as csx from 'csx'
+
+const homeRoot = style(
+  csstips.horizontal,
+  csstips.center,
+  csstips.centerJustified,
+  csstips.fillParent,
+  {
+    minHeight: px(269),
+  }
+)
+
+const homeBioContainer = style(
+  csstips.horizontal,
+  csstips.start,
+  csstips.horizontallySpaced(px(20)),
+)
+
+const homeBioPic = style(
+  csstips.inlineBlock,
+  csstips.width(px(249)),
+  csstips.height(px(249)),
+  {
+    borderRadius: px(24),
+    backgroundImage: csx.url(bioPicUrl)
+  }
+)
+
+const homeBioRight = style(
+  csstips.vertical,
+  csstips.start,
+  csstips.width(px(397))
+)
+
+const homeBioTitle = style(
+  pageTitleText,
+  csstips.horizontallyCenterChildren
+)
+
+export function Home() {
+  return <div className={homeRoot}>
+    <div className={homeBioContainer}>
+      <div className={homeBioPic} />
+      <div className={homeBioRight}>
+        <div className={homeBioTitle}>Gabriel Anderson</div>
+        <div className={pageContentText}>{bioText}</div>
+      </div>
+    </div>
+  </div>
+}
