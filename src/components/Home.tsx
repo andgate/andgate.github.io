@@ -40,7 +40,8 @@ const homeBioRight = style(
 
 const homeBioTitle = style(
   pageTitleText,
-  csstips.horizontallyCenterChildren
+  csstips.fillParent,
+  { textAlign: 'center' }
 )
 
 export function Home() {
@@ -49,7 +50,7 @@ export function Home() {
       <div className={homeBioPic} />
       <div className={homeBioRight}>
         <div className={homeBioTitle}>Gabriel Anderson</div>
-        <div className={pageContentText}>{bioText}</div>
+        <div className={style(pageContentText)}>{bioText}</div>
       </div>
     </div>
   </div>

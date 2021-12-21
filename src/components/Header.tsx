@@ -3,7 +3,7 @@ import { style } from 'typestyle'
 import * as csstips from 'csstips'
 import { blue1 } from '../styles/colors'
 import { px } from 'csx'
-import { fontOpenSansBold } from '../styles/fonts'
+import { fontOpenSans } from '../styles/fonts'
 
 const headerRoot = style(
   csstips.horizontal,
@@ -13,12 +13,15 @@ const headerRoot = style(
   { paddingLeft: px(37) }
 )
 
-const headerNavLink = style(fontOpenSansBold, {
-  color: blue1.toHexString(),
-  fontSize: px(18),
-  lineHeight: px(25),
-  textDecoration: 'none'
-})
+const headerNavLink = style(
+  fontOpenSans,
+  {
+    fontSize: px(18),
+    lineHeight: px(24.51),
+    color: blue1.toHexString(),
+    textDecoration: 'none'
+  }
+)
 
 export function Header() {
   return <div className={headerRoot}>

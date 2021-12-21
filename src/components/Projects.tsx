@@ -1,10 +1,35 @@
+import { style } from 'typestyle'
+import { pageTitleText } from '../styles/text'
+import * as csstips from 'csstips'
+import { px } from 'csx'
+import { PROJECT_LIST } from '../constants/projects'
+import { ProjectPreview } from './ProjectPreview'
+
+const projectsRoot = style(
+  csstips.vertical,
+  csstips.verticallySpaced(px(34)),
+  { paddingTop: px(26) }
+)
+
+const projectsTitleContainer = style(
+  csstips.centerCenter,
+)
+
+const projectsTitle = style(pageTitleText)
+
+const projectListContainer = style(
+  csstips.horizontal,
+  csstips.centerJustified,
+  csstips.horizontallySpaced(px(30))
+)
+
 export function Projects() {
-  return <div id="projects-container">
-    <div className='page-title'>Projects</div>
-    <ul id="project-list">
-      <li><a href="https://andgate.github.io/cosmic-calamity">Cosmic Calamity (video game)</a></li>
-      <li><a href="https://andgate.github.io/mnist">MNIST demo</a></li>
-      <li><a href="https://andgate.github.io/mandelbulb">Mandelbulb Explorer</a></li>
-    </ul>
+  return <div className={projectsRoot}>
+    <div className={projectsTitleContainer}>
+      <div className={projectsTitle}>Projects</div>
+    </div>
+    <div className={projectListContainer}>
+      {PROJECT_LIST.map((project) => <ProjectPreview project={project} />)}
+    </div>
   </div>
 }
