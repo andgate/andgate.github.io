@@ -33,4 +33,76 @@ export const PROJECT_LIST: Project[] = [
     'https://andgate.github.io/mnist',
     'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
   ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
+  project(
+    'MNIST Demo',
+    projectPreview3,
+    'https://andgate.github.io/mnist',
+    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+  ),
 ] 

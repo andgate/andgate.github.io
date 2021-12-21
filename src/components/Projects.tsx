@@ -23,7 +23,8 @@ const projectsTitle = style(pageTitleText)
 const projectListContainer = style(
   csstips.horizontal,
   csstips.centerJustified,
-  csstips.horizontallySpaced(px(30))
+  csstips.horizontallySpaced(px(30)),
+  csstips.wrap
 )
 
 export function Projects() {
