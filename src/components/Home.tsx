@@ -13,12 +13,13 @@ const homeRoot = style(
   csstips.fillParent,
   {
     minHeight: px(269),
+    paddingBottom: px(10)
   }
 )
 
 const homeBioContainer = style(
   csstips.horizontal,
-  csstips.start,
+  csstips.center,
   csstips.horizontallySpaced(px(20)),
 )
 

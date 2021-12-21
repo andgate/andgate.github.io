@@ -7,8 +7,11 @@ import { ProjectPreview } from './ProjectPreview'
 
 const projectsRoot = style(
   csstips.vertical,
-  csstips.verticallySpaced(px(34)),
-  { paddingTop: px(26) }
+  csstips.verticallySpaced(px(17)),
+  {
+    paddingTop: px(26),
+    paddingBottom: px(10)
+  }
 )
 
 const projectsTitleContainer = style(
