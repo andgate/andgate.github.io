@@ -10,7 +10,17 @@ const projectsRoot = style(
   csstips.verticallySpaced(px(17)),
   {
     paddingTop: px(26),
-    marginBottom: px(10)
+    marginBottom: px(10),
+    marginLeft: px(30),
+    marginRight: px(30)
+  }
+)
+
+const projectPreviewWrapper = style(
+  csstips.content,
+  {
+    marginLeft: px(15),
+    marginRight: px(15),
   }
 )
 
@@ -22,8 +32,8 @@ const projectsTitle = style(pageTitleText)
 
 const projectListContainer = style(
   csstips.horizontal,
+  csstips.center,
   csstips.centerJustified,
-  csstips.horizontallySpaced(px(30)),
   csstips.wrap
 )
 
@@ -33,7 +43,13 @@ export function Projects() {
       <div className={projectsTitle}>Projects</div>
     </div>
     <div className={projectListContainer}>
-      {PROJECT_LIST.map((project, i) => <ProjectPreview key={i} project={project} />)}
+      {
+        PROJECT_LIST.map((project, i) =>
+          <div className={projectPreviewWrapper}>
+            <ProjectPreview key={i} project={project} />
+          </div>
+        )
+      }
     </div>
   </div>
 }

@@ -7,8 +7,7 @@ module.exports = {
   entry: path.join(__dirname, 'src', 'index.tsx'),
   output: {
     path: path.resolve(__dirname, 'docs'),
-    filename: 'index.js',
-    publicPath: './',
+    filename: 'index.js'
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -65,6 +64,10 @@ module.exports = {
       inject: 'body',
       publicPath: './'
     }),
-    new FaviconsWebpackPlugin(path.resolve(__dirname, 'favicon.png'))
+    new FaviconsWebpackPlugin({
+      logo: path.resolve(__dirname, 'favicon.png'),
+      publicPath: './',
+      prefix: 'images/'
+    })
   ]
 }
