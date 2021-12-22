@@ -30,21 +30,19 @@ const projectNameText = style(
   }
 )
 
-const projectPreviewLink = style(
-  {
-    color: blue1.toHexString(),
-    textDecoration: 'none',
-    $nest: {
-      '&:hover': {
-        $nest: {
-          [`.${projectNameText}`]: {
-            textDecoration: 'underline'
-          }
+const projectPreviewLink = style({
+  color: blue1.toHexString(),
+  textDecoration: 'none',
+  $nest: {
+    '&:hover': {
+      $nest: {
+        [`.${projectNameText}`]: {
+          textDecoration: 'underline'
         }
       }
     }
   }
-)
+})
 
 const projectPreviewDescText = style(
   csstips.inlineBlock,
@@ -53,12 +51,6 @@ const projectPreviewDescText = style(
   {
     minWidth: px(169),
     textAlign: 'center',
-    textDecoration: 'none',
-    $nest: {
-      '&:hover': {
-        textDecoration: 'none !important'
-      }
-    }
   }
 )
 

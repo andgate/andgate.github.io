@@ -14,18 +14,16 @@ const headerRoot = style(
 )
 
 const headerNavItem = style({
-  borderBottomWidth: px(5),
-  borderColor: blue2.toHexString(),
-  $nest: {
-    '&:hover': {
-      borderBottomStyle: 'solid',
-    }
-  }
+  transition: 'color .5s, border-bottom-width .2s',
+  borderBottomStyle: 'solid',
+  borderBottomWidth: px(0),
+  borderColor: blue1.toHexString()
 })
 
 const headerNavLink = style(
   fontOpenSans,
   {
+    transition: 'color .5s',
     fontSize: px(18),
     lineHeight: px(24.51),
     color: blue1.toHexString(),
@@ -33,6 +31,12 @@ const headerNavLink = style(
     $nest: {
       '&:hover': {
         color: blue2.toHexString(),
+        $nest: {
+          [`.${headerNavItem}`]: {
+            borderColor: blue2.toHexString(),
+            borderBottomWidth: px(5),
+          }
+        }
       }
     }
   }
@@ -40,19 +44,23 @@ const headerNavLink = style(
 
 export function Header() {
   return <div className={headerRoot}>
-    <div className={headerNavItem}>
-      <Link to='/' className={headerNavLink}>Home</Link>
-    </div>
-    <div className={headerNavItem}>
-      <Link to='/projects' className={headerNavLink}>Projects</Link>
-    </div>
-    <div className={headerNavItem}>
-      <a href='https://andgate.github.io/resume/resume.pdf'
-        target='_blank'
-        className={headerNavLink}
-      >
+    <Link to='/' className={headerNavLink}>
+      <div className={headerNavItem}>
+        Home
+      </div>
+    </Link>
+    <Link to='/projects' className={headerNavLink}>
+      <div className={headerNavItem}>
+        Projects
+      </div>
+    </Link>
+    <a href='https://andgate.github.io/resume/resume.pdf'
+      target='_blank'
+      className={headerNavLink}
+    >
+      <div className={headerNavItem}>
         Resume
-      </a>
-    </div>
+      </div>
+    </a>
   </div>
 }
