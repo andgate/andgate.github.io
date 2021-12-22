@@ -1,12 +1,19 @@
 import { px } from 'csx'
 import { CSSProperties } from 'typestyle/lib/types'
 import { black, blue1 } from './colors'
-import { fontOpenSans } from './fonts'
+import { fontOpenSans, fontOpenSansBold } from './fonts'
 
 export const pageTitleText: CSSProperties = {
   ...fontOpenSans,
   fontSize: px(36),
   lineHeight: px(49.03),
+  color: blue1.toHexString()
+}
+
+export const pageTitleTextSmall: CSSProperties = {
+  ...fontOpenSansBold,
+  fontSize: px(12),
+  lineHeight: px(16.34),
   color: blue1.toHexString()
 }
 

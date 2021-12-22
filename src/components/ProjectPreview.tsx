@@ -2,12 +2,14 @@ import * as csstips from 'csstips'
 import { px } from 'csx'
 import * as csx from 'csx'
 import { style } from 'typestyle'
-import { Project } from '../constants/projects'
-import { pageContentTextSmall } from '../styles/text'
+import { Project } from '../common/constants/projects'
+import { pageContentTextSmall, pageTitleTextSmall } from '../common/styles/text'
+import { blue1 } from '../common/styles/colors'
 
 const projectPreviewRoot = style(
   csstips.vertical,
-  csstips.verticallySpaced(px(13))
+  csstips.verticallySpaced(px(13)),
+  { marginBottom: px(10) }
 )
 
 const projectPreviewImage = (imgUrl: string) => style(
@@ -16,14 +18,47 @@ const projectPreviewImage = (imgUrl: string) => style(
   { backgroundImage: csx.url(imgUrl) }
 )
 
-const projectPreviewDesc = style(
+const projectPreviewTextContainer = style(
+  csstips.vertical,
+  csstips.verticallySpaced(px(5))
+)
+
+const projectNameText = style(
+  pageTitleTextSmall,
+  {
+    textAlign: 'center'
+  }
+)
+
+const projectPreviewLink = style(
+  {
+    color: blue1.toHexString(),
+    textDecoration: 'none',
+    $nest: {
+      '&:hover': {
+        $nest: {
+          [`.${projectNameText}`]: {
+            textDecoration: 'underline'
+          }
+        }
+      }
+    }
+  }
+)
+
+const projectPreviewDescText = style(
+  csstips.inlineBlock,
   pageContentTextSmall,
   csstips.width(px(169)),
-  csstips.height(px(128)),
   {
     minWidth: px(169),
-    minHeight: px(128),
-    textAlign: 'center'
+    textAlign: 'center',
+    textDecoration: 'none',
+    $nest: {
+      '&:hover': {
+        textDecoration: 'none !important'
+      }
+    }
   }
 )
 
@@ -33,12 +68,17 @@ interface ProjectPreviewProps {
 
 export function ProjectPreview(props: ProjectPreviewProps) {
   const project = props.project
-  return <div className={projectPreviewRoot}>
-    <a href={project.url} >
+  return <a className={projectPreviewLink} href={project.url} >
+    <div className={projectPreviewRoot}>
       <div className={projectPreviewImage(project.img)} />
-    </a>
-    <div className={projectPreviewDesc}>
-      {project.desc}
+      <div className={projectPreviewTextContainer}>
+        <div className={projectNameText}>
+          {project.name}
+        </div>
+        <div className={projectPreviewDescText}>
+          {project.desc}
+        </div>
+      </div>
     </div>
-  </div>
+  </a>
 }

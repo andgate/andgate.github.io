@@ -20,12 +20,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "baseUrl": ".",
-    "paths": {
-      "~*": [
-        "./*"
-      ]
-    }
+    "baseUrl": "./src/"
   },
   "include": [
     "src/**/*"

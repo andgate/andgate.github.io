@@ -2,7 +2,7 @@ import bioPicUrl from 'data-url:../assets/bio-pic.png'
 import bioText from 'bundle-text:../assets/bio.txt'
 import { px } from 'csx'
 import { style } from 'typestyle'
-import { pageContentText, pageTitleText } from '../styles/text'
+import { pageContentText, pageTitleText } from '../common/styles/text'
 import * as csstips from 'csstips'
 import * as csx from 'csx'
 

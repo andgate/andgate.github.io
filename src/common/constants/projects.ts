@@ -1,7 +1,7 @@
-import _projectPreview1 from 'data-url:../assets/project-preview-1.png'
-import projectPreview2 from 'data-url:../assets/project-preview-2.png'
-import projectPreview3 from 'data-url:../assets/project-preview-3.png'
-import projectPreview4 from 'data-url:../assets/project-preview-4.png'
+import _projectPreview1 from 'data-url:../../assets/project-preview-1.png'
+import projectPreview2 from 'data-url:../../assets/project-preview-2.png'
+import projectPreview3 from 'data-url:../../assets/project-preview-3.png'
+import projectPreview4 from 'data-url:../../assets/project-preview-4.png'
 
 export type Project = {
   name: string,

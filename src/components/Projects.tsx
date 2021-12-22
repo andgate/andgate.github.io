@@ -1,8 +1,8 @@
 import { style } from 'typestyle'
-import { pageTitleText } from '../styles/text'
+import { pageTitleText } from '../common/styles/text'
 import * as csstips from 'csstips'
 import { px } from 'csx'
-import { PROJECT_LIST } from '../constants/projects'
+import { PROJECT_LIST } from '../common/constants/projects'
 import { ProjectPreview } from './ProjectPreview'
 
 const projectsRoot = style(
@@ -10,7 +10,7 @@ const projectsRoot = style(
   csstips.verticallySpaced(px(17)),
   {
     paddingTop: px(26),
-    paddingBottom: px(10)
+    marginBottom: px(10)
   }
 )
 
@@ -33,7 +33,7 @@ export function Projects() {
       <div className={projectsTitle}>Projects</div>
     </div>
     <div className={projectListContainer}>
-      {PROJECT_LIST.map((project) => <ProjectPreview project={project} />)}
+      {PROJECT_LIST.map((project, i) => <ProjectPreview key={i} project={project} />)}
     </div>
   </div>
 }

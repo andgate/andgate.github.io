@@ -1,7 +1,7 @@
 import { px } from 'csx'
 import { style } from 'typestyle'
-import { blue1, white } from '~src/styles/colors'
-import { fontOpenSans } from '~src/styles/fonts'
+import { blue1, white } from '../common/styles/colors'
+import { fontOpenSans } from '../common/styles/fonts'
 import * as csstips from 'csstips'
 
 const footerRoot = style(
@@ -21,13 +21,18 @@ const footerLink = style(fontOpenSans, {
   color: white.toHexString(),
   fontSize: px(11),
   lineHeight: px(15),
-  textDecoration: 'none'
+  textDecoration: 'underline',
+  $nest: {
+    '&:hover': {
+      textDecoration: 'none'
+    }
+  }
 })
 
 export function Footer() {
   return <div className={footerRoot}>
     <div className={footerContent}>
-      Designed by <a href='https://friendlyconure.me' className={footerLink}>Raleigh Blakeway</a>
+      Design by <a href='https://friendlyconure.me' className={footerLink}>Raleigh Blakeway</a>
     </div>
   </div>
 }

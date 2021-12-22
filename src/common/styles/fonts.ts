@@ -7,3 +7,9 @@ export const fontOpenSans: CSSProperties = {
   fontStyle: 'normal',
   fontWeight: 400
 }
+
+export const fontOpenSansBold: CSSProperties = {
+  fontFamily: 'Open Sans',
+  fontStyle: 'normal',
+  fontWeight: 'bold'
+}
