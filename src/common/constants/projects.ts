@@ -1,108 +1,46 @@
-import _projectPreview1 from '../../assets/project-preview-1.png'
-import projectPreview2 from '../../assets/project-preview-2.png'
-import projectPreview3 from '../../assets/project-preview-3.png'
-import projectPreview4 from '../../assets/project-preview-4.png'
+import alonzoDesc from '../../assets/text/projects/alonzo.txt'
+import cosmicCalamityDesc from '../../assets/text/projects/cosmic-calamity.txt'
+import mandelbulbDesc from '../../assets/text/projects/mandelbulb.txt'
+import mnistDesc from '../../assets/text/projects/mnist.txt'
+import alonzoBanner from '../../assets/images/project-banners/alonzo.png'
+import cosmicCalamityBanner from '../../assets/images/project-banners/cosmic-calamity.png'
+import mandelbulbBanner from '../../assets/images/project-banners/mandelbulb.png'
+import mnistBanner from '../../assets/images/project-banners/mnist.png'
 
 export type Project = {
   name: string,
-  img: string
+  bannerImage: string
   url: string,
   desc: string,
 }
 
-function project(name: string, img: string, url: string, desc: string): Project {
-  return { name, img, url, desc }
+function project(name: string, bannerImage: string, url: string, desc: string): Project {
+  return { name, bannerImage, url, desc }
 }
 
 export const PROJECT_LIST: Project[] = [
   project(
-    'Mandelbulb Explorer',
-    projectPreview4,
-    'https://andgate.github.io/mandelbulb',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+    'Alonzo',
+    alonzoBanner,
+    'https://andgate.github.io/alonzo',
+    alonzoDesc
   ),
   project(
     'Cosmic Calamity',
-    projectPreview2,
+    cosmicCalamityBanner,
     'https://andgate.github.io/cosmic-calamity',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+    cosmicCalamityDesc
+  ),
+  project(
+    'Mandelbulb Explorer',
+    mandelbulbBanner,
+    'https://andgate.github.io/mandelbulb',
+    mandelbulbDesc
   ),
   project(
     'MNIST Demo',
-    projectPreview3,
+    mnistBanner,
     'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
-  ),
-  project(
-    'MNIST Demo',
-    projectPreview3,
-    'https://andgate.github.io/mnist',
-    'integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque'
+    mnistDesc
   ),
 ] 

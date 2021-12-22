@@ -32,7 +32,7 @@ const projectsTitle = style(pageTitleText)
 
 const projectListContainer = style(
   csstips.horizontal,
-  csstips.center,
+  csstips.start,
   csstips.centerJustified,
   csstips.wrap
 )

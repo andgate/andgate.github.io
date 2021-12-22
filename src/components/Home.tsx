@@ -1,5 +1,5 @@
-import bioPicUrl from '../assets/bio-pic.png'
-import bioText from '../assets/bio.txt'
+import bioPicUrl from '../assets/images/bio-pic.png'
+import bioText from '../assets/text/bio.txt'
 import { px } from 'csx'
 import { style } from 'typestyle'
 import { pageContentText, pageTitleText } from '../common/styles/text'

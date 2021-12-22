@@ -70,7 +70,7 @@ export function ProjectPreview(props: ProjectPreviewProps) {
   const project = props.project
   return <a className={projectPreviewLink} href={project.url} >
     <div className={projectPreviewRoot}>
-      <div className={projectPreviewImage(project.img)} />
+      <div className={projectPreviewImage(project.bannerImage)} />
       <div className={projectPreviewTextContainer}>
         <div className={projectNameText}>
           {project.name}
