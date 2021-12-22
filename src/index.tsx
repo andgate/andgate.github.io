@@ -1,6 +1,6 @@
-import ReactDOM from 'react-dom'
+import { normalize, setupPage } from 'csstips'
 import { App } from './App'
-import { setupPage, normalize } from "csstips"
+import ReactDOM from 'react-dom'
 
 setupPage('#root')
 normalize()

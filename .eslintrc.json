@@ -5,7 +5,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -20,11 +20,13 @@
     "react",
     "@typescript-eslint"
   ],
+  "ignorePatterns": [
+    "webpack.config.js"
+  ],
   "rules": {
-    "sort-imports": "error",
     "indent": [
       "error",
-      4
+      2
     ],
     "linebreak-style": [
       "error",
