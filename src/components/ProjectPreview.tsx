@@ -9,7 +9,12 @@ import { blue1 } from '../common/styles/colors'
 const projectPreviewRoot = style(
   csstips.vertical,
   csstips.verticallySpaced(px(13)),
-  { marginBottom: px(10) }
+  {
+    transition: 'box-shadow .2s',
+    marginBottom: px(10),
+    boxShadow: `0px 0px 0px ${blue1.toHexString()}`,
+    borderRadius: px(24),
+  }
 )
 
 const projectPreviewImage = (imgUrl: string) => style(
@@ -30,20 +35,6 @@ const projectNameText = style(
   }
 )
 
-const projectPreviewLink = style({
-  color: blue1.toHexString(),
-  textDecoration: 'none',
-  $nest: {
-    '&:hover': {
-      $nest: {
-        [`.${projectNameText}`]: {
-          textDecoration: 'underline'
-        }
-      }
-    }
-  }
-})
-
 const projectPreviewDescText = style(
   csstips.inlineBlock,
   pageContentTextSmall,
@@ -53,6 +44,23 @@ const projectPreviewDescText = style(
     textAlign: 'center',
   }
 )
+
+const projectPreviewLink = style({
+  color: blue1.toHexString(),
+  textDecoration: 'none',
+  $nest: {
+    '&:hover': {
+      $nest: {
+        [`.${projectNameText}`]: {
+          textDecoration: 'underline'
+        },
+        [`.${projectPreviewRoot}`]: {
+          boxShadow: `0px 0px 10px ${blue1.toHexString()}`
+        }
+      }
+    }
+  }
+})
 
 interface ProjectPreviewProps {
   project: Project
