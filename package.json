@@ -5,7 +5,7 @@
   "description": "Homepage for the developer andgate.",
   "scripts": {
     "start": "webpack serve --mode=development",
-    "build": "pnpm run clean && webpack build --mode=production",
+    "build": "pnpm run clean && webpack build --mode=production && nodetouch ./docs/.nojekyll",
     "check": "tsc check",
     "clean": "rimraf docs"
   },
@@ -37,6 +37,7 @@
     "html-webpack-plugin": "^5.5.0",
     "rimraf": "^3.0.2",
     "terser-webpack-plugin": "^5.3.0",
+    "touch": "^3.1.0",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
