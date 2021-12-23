@@ -45,8 +45,9 @@ export function Projects() {
     <div className={projectListContainer}>
       {
         PROJECT_LIST.map((project, i) =>
-          <div className={projectPreviewWrapper}>
-            <ProjectPreview key={i} project={project} />
+          // NOTE: project list is static, so its fine to use index as key
+          <div key={i} className={projectPreviewWrapper}>
+            <ProjectPreview project={project} />
           </div>
         )
       }

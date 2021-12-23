@@ -39,16 +39,12 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/inline'
-      },
-      {
         test: /\.txt$/i,
         type: 'asset/source'
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/inline'
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -71,7 +67,7 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, 'favicon.png'),
       publicPath: './',
-      prefix: 'images/'
+      prefix: './'
     })
   ]
 }
