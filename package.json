@@ -7,7 +7,7 @@
     "start": "webpack serve --mode=development",
     "build": "pnpm run clean && webpack build --mode=production && nodetouch ./docs/.nojekyll",
     "check": "tsc check",
-    "clean": "rimraf docs"
+    "clean": "rimraf docs/"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,8 @@
-import alonzoDesc from '../../assets/text/projects/alonzo.txt'
+import coolscriptDesc from '../../assets/text/projects/coolscript.txt'
 import cosmicCalamityDesc from '../../assets/text/projects/cosmic-calamity.txt'
 import mandelbulbDesc from '../../assets/text/projects/mandelbulb.txt'
 import mnistDesc from '../../assets/text/projects/mnist.txt'
-import alonzoBanner from '../../assets/images/project-banners/alonzo.png'
+import coolscriptBanner from '../../assets/images/project-banners/coolscript.png'
 import cosmicCalamityBanner from '../../assets/images/project-banners/cosmic-calamity.png'
 import mandelbulbBanner from '../../assets/images/project-banners/mandelbulb.png'
 import mnistBanner from '../../assets/images/project-banners/mnist.png'
@@ -20,10 +20,10 @@ function project(name: string, bannerImage: string, url: string, desc: string): 
 
 export const PROJECT_LIST: Project[] = [
   project(
-    'Alonzo',
-    alonzoBanner,
-    'https://andgate.github.io/alonzo',
-    alonzoDesc
+    'CoolScript',
+    coolscriptBanner,
+    'https://andgate.github.io/coolscript',
+    coolscriptDesc
   ),
   project(
     'Cosmic Calamity',
