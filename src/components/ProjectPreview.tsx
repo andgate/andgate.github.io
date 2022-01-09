@@ -20,7 +20,10 @@ const projectPreviewRoot = style(
 const projectPreviewImage = (imgUrl: string) => style(
   csstips.width(px(175)),
   csstips.height(px(175)),
-  { backgroundImage: csx.url(imgUrl) }
+  { 
+    borderRadius: px(24),
+    backgroundImage: csx.url(imgUrl)
+  }
 )
 
 const projectPreviewTextContainer = style(

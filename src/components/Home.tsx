@@ -1,4 +1,4 @@
-import bioPicUrl from '../assets/images/bio-pic.png'
+import bioPicUrl from '../assets/images/bio-pic.jpg'
 import bioText from '../assets/text/bio.txt'
 import { px } from 'csx'
 import { style } from 'typestyle'
@@ -25,11 +25,12 @@ const homeBioContainer = style(
 
 const homeBioPic = style(
   csstips.inlineBlock,
-  csstips.width(px(249)),
+  csstips.width(px(187)),
   csstips.height(px(249)),
   {
     borderRadius: px(24),
-    backgroundImage: csx.url(bioPicUrl)
+    backgroundImage: csx.url(bioPicUrl),
+    backgroundRepeat: 'no-repeat'
   }
 )
 

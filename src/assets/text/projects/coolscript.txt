@@ -1,1 +1,1 @@
-Untyped programming language with a browser REPL!
+Lambda calculus interpreter and repl written in typescript with a react frontend.
