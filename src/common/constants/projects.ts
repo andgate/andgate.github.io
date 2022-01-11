@@ -34,7 +34,7 @@ export const PROJECT_LIST: Project[] = [
   project(
     'Mandelbulb Explorer',
     mandelbulbBanner,
-    'https://andgate.github.io/mandelbulb',
+    'https://www.github.com/andgate/mandelbulb',
     mandelbulbDesc
   ),
   project(
