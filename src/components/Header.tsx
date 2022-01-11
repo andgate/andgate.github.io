@@ -54,7 +54,7 @@ export function Header() {
         Projects
       </div>
     </Link>
-    <a href='https://andgate.github.io/resume/resume.pdf'
+    <a href='https://andgate.github.io/resume/gabriel-anderson_resume_2022.pdf'
       target='_blank'
       className={headerNavLink}
     >
