@@ -8,6 +8,7 @@ import { blue1 } from '../common/styles/colors'
 
 const projectPreviewRoot = style(
   csstips.vertical,
+  csstips.center,
   csstips.verticallySpaced(px(13)),
   {
     transition: 'box-shadow .2s',
@@ -28,7 +29,14 @@ const projectPreviewImage = (imgUrl: string) => style(
 
 const projectPreviewTextContainer = style(
   csstips.vertical,
-  csstips.verticallySpaced(px(5))
+  csstips.verticallySpaced(px(5)),
+  csstips.width(px(169)),
+  {
+    minWidth: px(169),
+    paddingLeft: px(5),
+    paddingRight: px(5),
+    paddingBottom: px(5)
+  }
 )
 
 const projectNameText = style(
@@ -41,10 +49,8 @@ const projectNameText = style(
 const projectPreviewDescText = style(
   csstips.inlineBlock,
   pageContentTextSmall,
-  csstips.width(px(169)),
   {
-    minWidth: px(169),
-    textAlign: 'center',
+    textAlign: 'center'
   }
 )
 
