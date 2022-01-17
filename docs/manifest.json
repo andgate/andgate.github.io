@@ -1,7 +1,7 @@
 {
-  "name": "andgate-homepage",
-  "short_name": "andgate-homepage",
-  "description": "Homepage for the developer andgate.",
+  "name": "andgate-web",
+  "short_name": "andgate-web",
+  "description": "Developer portfolio website of the legendary andgate.",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
