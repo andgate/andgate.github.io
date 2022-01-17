@@ -20,47 +20,41 @@ const headerNavItem = style({
   borderColor: blue1.toHexString()
 })
 
-const headerNavLink = style(
-  fontOpenSans,
-  {
-    transition: 'color .5s',
-    fontSize: px(18),
-    lineHeight: px(24.51),
-    color: blue1.toHexString(),
-    textDecoration: 'none',
-    $nest: {
-      '&:hover': {
-        color: blue2.toHexString(),
-        $nest: {
-          [`.${headerNavItem}`]: {
-            borderColor: blue2.toHexString(),
-            borderBottomWidth: px(5),
-          }
+const headerNavLink = style(fontOpenSans, {
+  transition: 'color .5s',
+  fontSize: px(18),
+  lineHeight: px(24.51),
+  color: blue1.toHexString(),
+  textDecoration: 'none',
+  $nest: {
+    '&:hover': {
+      color: blue2.toHexString(),
+      $nest: {
+        [`.${headerNavItem}`]: {
+          borderColor: blue2.toHexString(),
+          borderBottomWidth: px(5)
         }
       }
     }
   }
-)
+})
 
 export function Header() {
-  return <div className={headerRoot}>
-    <Link to='/' className={headerNavLink}>
-      <div className={headerNavItem}>
-        Home
-      </div>
-    </Link>
-    <Link to='/projects' className={headerNavLink}>
-      <div className={headerNavItem}>
-        Projects
-      </div>
-    </Link>
-    <a href='https://andgate.github.io/resume/gabriel-anderson_resume_2022.pdf'
-      target='_blank'
-      className={headerNavLink}
-    >
-      <div className={headerNavItem}>
-        Resume
-      </div>
-    </a>
-  </div>
+  return (
+    <div className={headerRoot}>
+      <Link to="/" className={headerNavLink}>
+        <div className={headerNavItem}>Home</div>
+      </Link>
+      <Link to="/projects" className={headerNavLink}>
+        <div className={headerNavItem}>Projects</div>
+      </Link>
+      <a
+        href="https://andgate.github.io/resume/gabriel-anderson_resume_2022.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className={headerNavLink}>
+        <div className={headerNavItem}>Resume</div>
+      </a>
+    </div>
+  )
 }

@@ -26,15 +26,19 @@ const footerRoot = style(
 const footerContent = style(fontOpenSans, {
   color: white.toHexString(),
   fontSize: px(11),
-  lineHeight: px(15),
+  lineHeight: px(15)
 })
 
 export function Footer() {
-  return <a className={footerLink} href='https://friendlyconure.me' target='_blank'>
-    <div className={footerRoot}>
-      <div className={footerContent}>
-        Design by Raleigh Blakeway
+  return (
+    <a
+      className={footerLink}
+      href="https://friendlyconure.me"
+      target="_blank"
+      rel="noreferrer">
+      <div className={footerRoot}>
+        <div className={footerContent}>Design by Raleigh Blakeway</div>
       </div>
-    </div>
-  </a>
+    </a>
+  )
 }
