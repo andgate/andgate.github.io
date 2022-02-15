@@ -5,7 +5,9 @@
   "description": "Developer portfolio website of the legendary andgate.",
   "scripts": {
     "start": "webpack serve --mode=development",
-    "build": "pnpm run clean && webpack build --mode=production && nodetouch ./docs/.nojekyll",
+    "build": "pnpm run clean && pnpm build:docs",
+    "build:docs": "pnpm build:prod && pnpm nojekyll && pnpm cname",
+    "build:prod": "webpack build --mode=production",
     "clean": "rimraf docs/",
     "check": "tsc check",
     "prettier": "prettier --check src/ tests/",
@@ -14,7 +16,9 @@
     "lint:fix": "pnpm lint --fix",
     "verify": "pnpm prettier && pnpm lint",
     "verify:fix": "pnpm prettier:fix && pnpm lint:fix",
-    "test": "jest"
+    "test": "jest",
+    "nojekyll": "nodetouch docs/.nojekyll",
+    "cname": "cpx CNAME ./docs"
   },
   "repository": {
     "type": "git",
@@ -38,6 +42,7 @@
     "@typescript-eslint/eslint-plugin": "^5.8.0",
     "@typescript-eslint/parser": "^5.8.0",
     "babel-loader": "^8.2.3",
+    "cpx": "^1.5.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-html": "^6.2.0",
